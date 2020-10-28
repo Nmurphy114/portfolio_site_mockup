@@ -1,0 +1,180 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* parallax header */
+.banner{
+    background-image: url("Assets/Header\ Mock-Up\ Long-04.svg");
+
+    height:20vmax;
+
+    background-attachment: fixed;
+    background-position-y: -50px;
+    background-position-x: -5px;
+    background-repeat: no-repeat;
+    background-size: 105%;
+}
+
+/* mobile parallax header */
+@media screen and (max-width: 800px){
+    .banner{
+        background-image: url("Assets/Header\ Mock-Up\ Long-04.svg");
+    
+        height:13vmax;
+    
+        background-attachment: fixed;
+        background-position-y: -10px;
+        background-position-x: 0px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+}
+
+.container{
+    height: 100%;
+    width: 65%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "n n"
+        "h h"
+        "e e"
+        "x s"
+        "u w"
+        "i c";
+}
+
+/* mobile/small window grid */
+@media screen and (max-width: 800px){
+    .container{
+        width: 85%;
+        margin: 0 auto;
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-template-areas:
+        "n"
+        "h"
+        "e"
+        "x"
+        "u"
+        "i"
+        "s"
+        "w"
+        "c";
+    }
+}
+
+/* for grid */
+nav{
+    grid-area: n;
+    display: inline;
+    text-align: center;
+    margin-top: 20px;
+}
+
+header{
+    grid-area: h;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.education{
+    grid-area: e;
+}
+
+.experience{
+    grid-area: x;
+    margin-top: 30px;
+}
+
+.umass{
+    grid-area: u;
+}
+
+.intro{
+    grid-area: i;
+}
+
+.skills{
+    grid-area: s;
+    margin-top: 30px;
+}
+
+.software{
+    grid-area: w;
+    margin-top: 30px;
+}
+
+.certifications{
+    grid-area: c;
+    margin-top: 30px;
+}
+
+.experience, .umass, .intro{
+    margin-right: 30px;
+}
+/* end grid */
+
+footer{
+    margin-top: 50px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 15%;
+
+    font-family: 'Questrial', sans-serif;
+    color: rgb(255, 255, 255);
+
+    background-image: url("Assets/Gradient\ BG.svg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+/* font styles */
+a{
+    font-family: 'Questrial', sans-serif;
+    font-size: 15pt;
+    color: black;
+    text-decoration: none;
+    margin: 4%;
+}
+
+a:hover, a:active{
+    color: rgb(255, 173, 21);
+}
+
+h1{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+    font-size: 300%;
+    transform: skewX(-20deg);
+}
+
+h2{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+}
+
+h3{
+    font-family: 'Questrial', sans-serif;
+    margin-bottom: 15px;
+}
+
+h4{
+    font-family: 'Questrial', sans-serif;
+    font-weight: 500;
+}
+
+.heavy{
+    font-weight: 700;
+}
+
+li{
+    font-family: 'Lora', serif;
+    margin-top: 10px;
+}
